@@ -1,0 +1,110 @@
+
+body {
+	background-color: #201e36;
+}
+
+
+h1 {
+	font-family: Georgia, sans-serif;
+	color: rgb(114, 106, 106);
+	text-align: center;
+}
+
+b1 {
+	font-family: Georgia, sans-serif;
+	font-size: 18px; /* Schriftgröße des Buttons */
+	width: 90px; /* Breite des Buttons */
+	height: 50px; /* Höhe des Buttons */
+	color: rgb(114, 106, 106);
+	text-align: center;
+	display: inline-block; /* Damit die Breite und Höhe angewendet werden können */
+	padding: 10px 20px; /* Innenabstand des Buttons */
+	border: none;
+	border-radius: 10px; /* Abrundung des Buttons */
+}
+
+b1:hover {
+	outline: 1px solid #ffffff;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh; /* Vollständige Höhe des Viewports */
+}
+
+
+.square {
+	width: 480px; /* Breite des Quadrats */
+	height: 480px; /* Höhe des Quadrats */
+	background-color: rgb(162, 162, 168); /* Hintergrundfarbe des Quadrats */
+	border-radius: 10px; /* Abrundung des Quadrats */
+	outline: 1px solid #ffffff;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr); /* Adjust as needed */
+	grid-template-rows: repeat(6, 1fr); /* Adjust as needed */
+	gap: 4px; /* Adjust as needed */
+	width: 100%; /* Ensure grid takes up full width of parent */
+	height: 100%; /* Ensure grid takes up full height of parent */
+}
+
+/* Define styles for the cells */
+.cell {
+	background-color: rgb(162, 162, 168); /* Adjust as needed */
+	border: 5px solid rgb(80, 75, 75); /* Adjust as needed */
+	border-radius: 10px;
+	text-align: center; /* Center-align text within cell */
+	font-size: 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	caret-color: transparent; /* Hide the blinking caret */
+}
+
+
+.selected {
+	background-color: lightblue;
+}
+
+.grid .cell:first-child,
+.grid .cell:last-child,
+.grid .cell:nth-child(6),
+.grid .cell:nth-child(31)
+{
+	background-color: rgb(162, 162, 168);
+	border: 1px solid  rgb(162, 162, 168);
+}
+
+.input {
+	display: flex;
+	align-items: center; /* Buttons vertikal zentrieren */
+	justify-content: space-around; /* Buttons horizontal verteilen */
+	height: 80px;
+	width: 400px;
+	border-radius: 10px;
+	background-color: lightgray;
+	margin: 0 auto;
+}
+
+b2 {
+	font-family: Georgia, sans-serif;
+	font-size: 40px; /* Adjust the text size */
+	color: rgb(114, 106, 106);
+	text-align: center;
+	display: inline-block; /* Ensure block-level display */
+	width: 70px; /* Set the width of the button */
+	height: 70px; /* Set the height of the button */
+	line-height: 70px; /* Ensure the text is vertically centered */
+}
+
+b2:hover {
+	outline: 2px solid #37c4d6;
+	border-radius: 10px;
+	cursor: pointer;
+}
