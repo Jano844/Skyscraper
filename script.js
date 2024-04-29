@@ -63,7 +63,12 @@ function clearAllCells() {
 
 const newPuzzel = document.getElementById('newPuzzel');
 newPuzzel.addEventListener('click', () => {
+
 	clearAllCells();
+	var correct = document.querySelector('.correct');
+	var incorrect = document.querySelector('.incorrect');
+	correct.style.display = "none";
+	incorrect.style.display = "none";
 
 	const a = document.querySelector('.cell:nth-child(2)');
 	const b = document.querySelector('.cell:nth-child(3)');
