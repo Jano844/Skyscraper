@@ -10,6 +10,12 @@ h1 {
 	text-align: center;
 }
 
+#Buttonline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 b1 {
 	font-family: Georgia, sans-serif;
 	font-size: 18px; /* Schriftgröße des Buttons */
@@ -32,13 +38,13 @@ b1:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60vh; /* Vollständige Höhe des Viewports */
+	margin-top: 10px;
 }
 
 
 .square {
-	width: 480px; /* Breite des Quadrats */
-	height: 480px; /* Höhe des Quadrats */
+	width: 400px; /* Breite des Quadrats */
+	height: 400px; /* Höhe des Quadrats */
 	background-color: rgb(162, 162, 168); /* Hintergrundfarbe des Quadrats */
 	border-radius: 10px; /* Abrundung des Quadrats */
 	outline: 1px solid #ffffff;
@@ -67,6 +73,9 @@ b1:hover {
 	caret-color: transparent; /* Hide the blinking caret */
 }
 
+.not-selectable {
+	pointer-events: none;
+}
 
 .selected {
 	background-color: lightblue;
@@ -90,6 +99,7 @@ b1:hover {
 	border-radius: 10px;
 	background-color: lightgray;
 	margin: 0 auto;
+	margin-top: 10px;
 }
 
 b2 {
