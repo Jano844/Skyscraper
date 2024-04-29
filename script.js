@@ -90,7 +90,7 @@ newPuzzel.addEventListener('click', () => {
 	const p = document.querySelector('.cell:nth-child(34)');
 	const m = document.querySelector('.cell:nth-child(35)');
 
-	randomNumber = getRandomInt(0, 2);
+	randomNumber = getRandomInt(0, 10);
 	currentMap = randomNumber;
 
 	a.textContent = mapArray[randomNumber][0];
@@ -159,7 +159,15 @@ function getRandomInt(min, max) {
 const mapArray = [
 	[2, 2, 1, 3, 3, 1, 2, 3, 2, 2, 3, 1, 3, 2, 2, 1],
 	[4, 1, 2, 2, 2, 3, 2, 1, 3, 2, 1, 2, 1, 4, 2, 2],
-	[1, 2, 2, 3, 1, 2, 4, 2, 3, 2, 1, 3, 2, 1, 3, 2]
+	[1, 2, 2, 3, 1, 2, 4, 2, 3, 2, 1, 3, 2, 1, 3, 2],
+	[4, 3, 1, 2, 3, 3, 2, 1, 2, 1, 3, 4, 1, 2, 2, 2],
+	[1, 3, 3, 2, 1, 2, 3, 2, 2, 1, 2, 3, 4, 1, 2, 2],
+	[2, 2, 1, 3, 3, 1, 4, 2, 2, 2, 1, 2, 2, 1, 3, 2],
+	[1, 3, 2, 2, 1, 2, 2, 3, 3, 1, 2, 2, 3, 2, 1, 3],
+	[2, 3, 1, 2, 3, 1, 2, 3, 2, 3, 3, 1, 3, 2, 2, 1],
+	[3, 2, 1, 2, 2, 2, 1, 4, 2, 2, 4, 1, 2, 3, 2, 1],
+	[2, 1, 2, 3, 2, 1, 2, 2, 3, 4, 2, 1, 2, 3, 2, 1],
+	[1, 2, 3, 2, 1, 3, 2, 2, 3, 1, 2, 2, 2, 2, 1, 3]
 ];
 
 let currentMap = 0;
