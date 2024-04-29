@@ -289,10 +289,10 @@ function checkMap() {
 	let isCorrect = true;
 	clearMap();
 	getMap();
-	// check if all cells are filled
+	// check if all cells are filled with a number between 1 and 4
 	for (let i = 0; i < 4; i++) {
 		for (let j = 0; j < 4; j++) {
-			if (map[i][j] == 0)
+			if (map[i][i] != 1 && map[i][j] != 2 && map[i][j] != 3 && map[i][j] != 4)
 				isCorrect = false;
 		}
 	}
