@@ -41,6 +41,13 @@ b1:hover {
 	margin-top: 10px;
 }
 
+.help {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
 
 .square {
 	width: 320px; /* Breite des Quadrats */
@@ -147,3 +154,9 @@ b2:hover {
 	margin-top: 10px;
 }
 
+p {
+	font-family: Georgia, sans-serif;
+	font-size: 18px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+}

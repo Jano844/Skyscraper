@@ -127,6 +127,25 @@ checkPuzzel.addEventListener('click', () => {
 		incorrect.style.display = "flex";
 });
 
+var help = false;
+const helpPuzzel = document.getElementById('helpPuzzel');
+helpPuzzel.addEventListener('click', () => {
+	var game = document.querySelector('.container');
+	var helper = document.querySelector('.help');
+
+	if (help == false) {
+		help = true;
+		game.style.display = "none";
+		helper.style.display = "flex";
+	}
+	else {
+		console.log("help\n");
+		help = false;
+		game.style.display = "flex";
+		helper.style.display = "none";
+	}
+});
+
 function getRandomInt(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
