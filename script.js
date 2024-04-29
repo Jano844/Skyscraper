@@ -292,7 +292,7 @@ function checkMap() {
 	// check if all cells are filled with a number between 1 and 4
 	for (let i = 0; i < 4; i++) {
 		for (let j = 0; j < 4; j++) {
-			if (map[i][i] != 1 && map[i][j] != 2 && map[i][j] != 3 && map[i][j] != 4)
+			if (map[i][j] != 1 && map[i][j] != 2 && map[i][j] != 3 && map[i][j] != 4)
 				isCorrect = false;
 		}
 	}
