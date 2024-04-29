@@ -43,8 +43,8 @@ b1:hover {
 
 
 .square {
-	width: 400px; /* Breite des Quadrats */
-	height: 400px; /* Höhe des Quadrats */
+	width: 320px; /* Breite des Quadrats */
+	height: 320px; /* Höhe des Quadrats */
 	background-color: rgb(162, 162, 168); /* Hintergrundfarbe des Quadrats */
 	border-radius: 10px; /* Abrundung des Quadrats */
 	outline: 1px solid #ffffff;
@@ -95,7 +95,7 @@ b1:hover {
 	align-items: center; /* Buttons vertikal zentrieren */
 	justify-content: space-around; /* Buttons horizontal verteilen */
 	height: 80px;
-	width: 400px;
+	width: 320px;
 	border-radius: 10px;
 	background-color: lightgray;
 	margin: 0 auto;
